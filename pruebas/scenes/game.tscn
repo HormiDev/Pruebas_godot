@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=4 uid="uid://wbqabau1gy35"]
+[gd_scene load_steps=7 format=4 uid="uid://wbqabau1gy35"]
 
 [ext_resource type="Texture2D" uid="uid://bbaoo800wpbui" path="res://sprites/platforms.png" id="1_r86xu"]
 [ext_resource type="Texture2D" uid="uid://w4k7lhjyxyry" path="res://sprites/world_tileset.png" id="2_g66y7"]
@@ -192,9 +192,6 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_1068p")
 sources/1 = SubResource("TileSetAtlasSource_6n2sf")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qc4l0"]
-size = Vector2(374, 20)
-
 [node name="game" type="Node2D"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -206,7 +203,3 @@ tile_set = SubResource("TileSet_brwyw")
 
 [node name="Camera2D" type="Camera2D" parent="player2"]
 zoom = Vector2(4, 4)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(181, 135)
-shape = SubResource("RectangleShape2D_qc4l0")
